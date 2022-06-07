@@ -1,40 +1,24 @@
+
 <?php
-$name =  'Ruslan';
-$age = 30;
-$number = 11;
-$score = 22;
-$score = 20;
-$flightNumber = 132;
-$secondName = 'Oleg';
-$hello = 'Привет';
-$babyName = 'Игорь';
-$brain = null;
-$middle = null;
-$long = null;
-$male =true;
-$iAmGay = false;
-$top = true;
-$underdog = false;
-$salad= ['tomato', 'cucumber' , 'oil'];
-$fish = ['oil' , 'fire', 'milk'];
-$party = ['beer' , 'girl', 'dance'];
-$champion = ['first', 'second'];
-$question = 1;
-$question = 0;
-$short = 'Hello world';
-if ($short === 'Hello world') {
-    echo 'Hello world';
-}
-else {
-    echo 'condition is false';
-}
+$roomLength = 5; // длина
+$roomWidth = 3; // ширина
+$roomHeight = 4; // высота
+$ceilingFinishCost = 175; // при цене 175 за м2
+$flooringCost = 350; // при цене 350 за м2
+$wallPlasteringCost = 200; // при цене 200 за м2
 
-$float = 5.0;
-$float = 1.1;
-$float = 5.5;
-$float = 1.2;
-$float = 2.2;
+$floorAndCeilingArea = 5 * 3 ;
+$WallArea = 4 * 5;
+$ceilingFinishCost = 175 * 15;
+$flooringCost = 350 * 15;
+$wallPlasteringCost = 200 * 20;
 
+
+echo "Floor and ceiling area: {$floorAndCeilingArea}. <br />";
+echo "Wall area: {$WallArea}. <br />";
+echo "Ceiling finish cost: {$ceilingFinishCost}. <br />";
+echo "Flooring cost: {$flooringCost}. <br />";
+echo "Wall plastering cost: {$wallPlasteringCost} <br />";
 
 
 
