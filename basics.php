@@ -21,4 +21,5 @@ echo "Flooring cost: {$flooringCost}. <br />";
 echo "Wall plastering cost: {$wallPlasteringCost} <br />";
 
 echo 'I studying ' . 'stings ' . 'concatenation.';
-$array = [];
+$array = ['hello'];
+
