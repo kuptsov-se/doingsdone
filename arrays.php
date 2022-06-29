@@ -20,7 +20,7 @@ $students = [
         'name' => 'Oleg Petrov',
         'math' => 3,
         'ukr' => 4,
-        'eng' =>3,
+        'eng' => 3,
     ],
     [
         'id' => 4,
@@ -40,12 +40,11 @@ $students = [
 foreach ($students as $studentInfo) {
     echo 'Student id: ' . $studentInfo['id'] . '<br>';
     echo 'Student: ' . $studentInfo['name'] . '<br>';
-    //foreach ($students as $studentInfo => $studentData) {
         $mathMark = $studentInfo ['math'];
         $ukrMark = $studentInfo ['ukr'];
         $engMark = $studentInfo ['eng'];
         $marksSum = $mathMark + $ukrMark + $engMark;
         $avg = $marksSum / 3;
         echo 'AVG mark: ' . $avg . '<br>';
-
 }
+
