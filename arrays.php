@@ -40,11 +40,11 @@ $students = [
 foreach ($students as $studentInfo) {
     echo 'Student id: ' . $studentInfo['id'] . '<br>';
     echo 'Student: ' . $studentInfo['name'] . '<br>';
-        $mathMark = $studentInfo ['math'];
-        $ukrMark = $studentInfo ['ukr'];
-        $engMark = $studentInfo ['eng'];
-        $marksSum = $mathMark + $ukrMark + $engMark;
-        $avg = $marksSum / 3;
-        echo 'AVG mark: ' . $avg . '<br>';
+    $mathMark = $studentInfo ['math'];
+    $ukrMark = $studentInfo ['ukr'];
+    $engMark = $studentInfo ['eng'];
+    $marksSum = $mathMark + $ukrMark + $engMark;
+    $avg = $marksSum / 3;
+    echo 'AVG mark: ' . $avg . '<br>';
 }
 
