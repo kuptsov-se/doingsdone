@@ -37,14 +37,12 @@ $students = [
         'eng' => 4,
     ],
 ];
-foreach ($students as $studentInfo) {
-    echo 'Student id: ' . $studentInfo['id'] . '<br>';
-    echo 'Student: ' . $studentInfo['name'] . '<br>';
-    $mathMark = $studentInfo ['math'];
-    $ukrMark = $studentInfo ['ukr'];
-    $engMark = $studentInfo ['eng'];
-    $marksSum = $mathMark + $ukrMark + $engMark;
-    $avg = $marksSum / 3;
-    echo 'AVG mark: ' . $avg . '<br>';
+foreach ($students as $student){
+    $avgMarksStudent = avgMarks($student['math'], $student['ukr'], $student['eng']);
+    $roundedAvgMarksStudent = round($avgMarksStudent, 2);
+    echo $student['name'] . ':' . $roundedAvgMarksStudent . '<br>';
 }
-
+function avgMarks($mathMark, $ukrMark, $engMark){
+    $avgMarks = ($mathMark + $ukrMark + $engMark) / 3;
+    return $avgMarks;
+}
