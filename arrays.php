@@ -30,7 +30,7 @@ $students = [
         'eng' => 4,
     ],
     [
-        'id' => 5,
+        'id' => 6,
         'name' => 'Eugen Ibragimov',
         'math' => 5,
         'ukr' => 4,
@@ -41,6 +41,7 @@ foreach ($students as $student) {
     $avgMarksStudent = avgMarks($student['math'], $student['ukr'], $student['eng']);
     $roundedAvgMarksStudent = round($avgMarksStudent, 2);
     echo $student['name'] . ':' . $roundedAvgMarksStudent . '<br>';
+
 }
 function avgMarks($mathMark, $ukrMark, $engMark) {
     $avgMarks = ($mathMark + $ukrMark + $engMark) / 3;
